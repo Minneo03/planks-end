@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plank's End - Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/homePageStyle.css') }}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('amusements') }}">Amusements</a>
+            <a href="{{ url_for('ticketing') }}">Tickets</a>
+            <a href="{{ url_for('aboutUs') }}">About Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Welcome to Plank's End!</h1>
+            <p>
+                Plank's End is a thrilling amusement park where family fun meets adventure!
+                From heart-pounding roller coasters to delightful carousels, we have attractions
+                for both the young and the young at heart. Whether you're seeking an adrenaline rush
+                or a day of relaxation by the ocean, Plank's End has something for everyone.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
