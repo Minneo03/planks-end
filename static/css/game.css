@@ -1,0 +1,26 @@
+canvas {
+    border: 5px solid #8b5e3c; /* Darker wood tone for border */
+    background-color: #e0dcc1;
+    display: block;
+    margin: 20px auto;
+    box-sizing: border-box; /* Ensure the border is included in the canvas size */
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #8b5e3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6e472a;
+}
+
+#score {
+    text-align: center;
+    font-size: 1.5em;
+}

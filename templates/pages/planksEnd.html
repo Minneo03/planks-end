@@ -1,3 +1,12 @@
 {% extends 'base.html' %}
 
-{% block title %} Home - Plank's End {% endblock %}
+{% block title %}Plank's End Game{% endblock %}
+
+{% block content %}
+<h2>Plank's End Endless Runner</h2>
+<canvas id="gameCanvas" width="800" height="300"></canvas>
+<p>Press Space to Jump!</p>
+<p id="score">Score: 0</p>
+<button onclick="restartGame()">Restart</button>
+<script src="{{ url_for('static', filename='js/game.js') }}"></script>
+{% endblock %}
