@@ -11,5 +11,20 @@
         for both the young and the young at heart. Whether you're seeking an adrenaline rush
         or a day of relaxation by the ocean, Plank's End has something for everyone.
     </p>
+
+    <div class="image-button-container">
+        <div class="image-button">
+            <img src="{{ url_for('static', filename='images/krakensCurseAttraction.png') }}" alt="Main Attraction">
+            <a href="{{ url_for('amusements') }}" class="button">Explore Amusements</a>
+        </div>
+        <div class="image-button">
+            <img src="{{ url_for('static', filename='images/tickets.png') }}" alt="Tickets">
+            <a href="{{ url_for('ticketing') }}" class="button">Buy Tickets</a>
+        </div>
+        <div class="image-button">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Plank's End">
+            <a href="{{ url_for('planksEnd') }}" class="button">Play the Game</a>
+        </div>
+    </div>
 </section>
 {% endblock %}

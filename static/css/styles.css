@@ -85,3 +85,37 @@ button:hover {
     background-color: #6e472a;
 }
 
+.image-button-container {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.image-button {
+    text-align: center;
+}
+
+.image-button img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-button .button {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 12px;
+    background-color: #8b5e3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.image-button .button:hover {
+    background-color: #6e472a;
+}
+
+

@@ -71,7 +71,7 @@ function updateGame() {
     if (gameOver) {
         ctx.fillStyle = "red";
         ctx.font = "30px Arial";
-        ctx.fillText("Game Over! Press Space to Restart", canvas.width / 2 - 170, canvas.height / 2);
+        ctx.fillText("Game Over! Press Space to Restart", canvas.width / 2 - 250, canvas.height / 2);
         return;
     }
 
