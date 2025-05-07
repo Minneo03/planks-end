@@ -1,4 +1,33 @@
 {% extends 'base.html' %}
 
-{% block title %} Home - Plank's End {% endblock %}
+{% block title %} Ticket Booking - Plank's End {% endblock %}
 
+{% block content %}
+<section class="ticket-booking">
+    <h2>Book Your Tickets to Plank's End</h2>
+    <form action="{{ url_for('ticketing_bp.ticketing') }}" method="POST" class="ticket-form" id="ticketForm">
+
+        <div id="customerList">
+            <div class="customer-entry">
+                <label>Customer Name:</label>
+                <input type="text" name="customer_name[]" placeholder="Enter Full Name" required>
+                <label>Age Category:</label>
+                <select name="age_category[]" required>
+                    <option value="Adult">Adult</option>
+                    <option value="Child">Child</option>
+                </select>
+                <button type="button" class="remove-customer" onclick="removeCustomer(this)">Remove</button>
+            </div>
+        </div>
+
+        <button type="button" onclick="addCustomer()">Add Customer</button>
+
+        <label>Purchaser Email:</label>
+        <input type="email" name="purchaser_email" placeholder="example@email.com" required>
+
+        <button type="submit">Book Ticket</button>
+    </form>
+</section>
+
+<script src="{{ url_for('static', filename='js/ticketForm.js') }}"></script>
+{% endblock %}
