@@ -10,5 +10,16 @@
         Established in the spirit of adventure and community, our park offers a unique blend of
         thrilling rides and serene seaside experiences.
     </p>
+
+    <div class="image-paragraph-container">
+        <div class="image-button">
+            <img src="{{ url_for('static', filename='images/krakensCurseAttraction.png') }}" alt="Main Attraction">
+            <a href="{{ url_for('amusements') }}" class="button">Explore Amusements</a>
+        </div>
+        <div class="image-button">
+            <img src="{{ url_for('static', filename='images/tickets.png') }}" alt="Tickets">
+            <a href="{{ url_for('ticketing') }}" class="button">Buy Tickets</a>
+        </div>
+    </div>
 </section>
 {% endblock %}
