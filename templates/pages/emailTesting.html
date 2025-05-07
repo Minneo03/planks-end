@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %} Home - Plank's End {% endblock %}
+
+{% block content %}
+<h2>Send a Test Email</h2>
+<form method="POST" action="{{ url_for('email.email_testing') }}">
+    <label for="email">Recipient Email:</label>
+    <input type="email" name="email" required>
+    <br>
+    <label for="message">Message:</label>
+    <textarea name="message" rows="4" required></textarea>
+    <br>
+    <button type="submit">Send Email</button>
+</form>
+
+{% with messages = get_flashed_messages(with_categories=True) %}
+  {% if messages %}
+    <ul>
+      {% for category, message in messages %}
+        <li class="{{ category }}">{{ message }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+{% endblock %}
