@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title %}About Us - Plank's End{% endblock %}
+{% block title %}Our Amusements - Plank's End{% endblock %}
 
 {% block content %}
 <section class="textblock">
@@ -11,5 +11,17 @@
         our park ensures non-stop excitement. Whether you're seeking high-speed thrills or family-friendly fun,
         our diverse selection of rides and attractions guarantees unforgettable memories for everyone.
     </p>
+
+    <main>
+        <h1>Amusement Slideshow</h1>
+        <div class="slideshow">
+            <div class="slideshow-container">
+                <img class="arrow left" onclick="prevSlide()" src="{{ url_for('static', filename='images/leftArrow.png') }}">
+                <img alt="Slideshow Image" id="slideshowImg" src="{{ url_for('static', filename='images/amusements/Krakens Curse.png') }}">
+                <img class="arrow right" onclick="nextSlide()" src="{{ url_for('static', filename='images/rightArrow.png') }}">
+            </div>
+        </div>
+    </main>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </section>
 {% endblock %}

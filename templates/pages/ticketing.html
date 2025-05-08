@@ -26,6 +26,9 @@
         <input type="email" name="purchaser_email" placeholder="example@email.com" required>
 
         <button type="submit">Book Ticket</button>
+        {% if message %}
+        <p class="message">{{ message }}</p>
+        {% endif %}
     </form>
 </section>
 

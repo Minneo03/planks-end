@@ -11,7 +11,7 @@ app.config.from_object(Config)
 app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')
 app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')
 
-# Initialize Flask-Mail
+# Initialize Flask-Mail <----- Recommend using this if you would like to send emails using flask, it is a very helpful API
 mail.init_app(app)
 
 # Register blueprints
@@ -34,9 +34,9 @@ def aboutUs():
 def planksEnd():
     return render_template('pages/planksEnd.html')
 
-@app.route('/emailTesting')
-def emailTesting():
-    return render_template('pages/emailTesting.html')
+@app.route('/ticketing')
+def ticketing():
+    return render_template('pages/ticketing.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

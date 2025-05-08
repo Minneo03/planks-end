@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0dcc1; /* Light wood tone */
+    background-color: #e0dcc1;
     color: #2f2f2f;
 }
 
 header {
-    background-color: #8b5e3c; /* Darker wood tone */
+    background-color: #8b5e3c;
     padding: 1em 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -28,8 +28,8 @@ header {
 }
 
 .navbar a:hover {
-    color: #87ceeb; /* Ocean blue */
-    background-color: #6e472a; /* Slightly darker wood tone */
+    color: #87ceeb;
+    background-color: #6e472a;
     border-radius: 5px;
 }
 
@@ -48,7 +48,7 @@ main {
 }
 
 h1 {
-    color: #8b5e3c; /* Darker wood tone */
+    color: #8b5e3c;
 }
 
 p {
@@ -96,6 +96,7 @@ button:hover {
     display: flex;
     justify-content: center;
     gap: 2em;
+    flex-wrap: wrap;
     margin-top: 2em;
 }
 
@@ -103,10 +104,24 @@ button:hover {
     text-align: center;
 }
 
+.image-paragraph {
+    text-align: center;
+    width: 220px;
+    margin: 30px;
+}
+
 .image-button img {
     width: 82%;
     height: auto;
     border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-paragraph img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 75%;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -122,8 +137,155 @@ button:hover {
     transition: background-color 0.3s;
 }
 
+.image-paragraph .p {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 8px 12px;
+    background-color: #8b5e3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
 .image-button .button:hover {
     background-color: #6e472a;
 }
 
+.slideshow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+.slideshow-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 300px;
+}
+
+.slideshow img {
+    max-height: 300px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.arrow:hover {
+    opacity: 1;
+}
+
+.arrow.left {
+    left: 120px;
+}
+
+.arrow.right {
+    right: 120px;
+}
+
+.ticket-booking {
+    max-width: 1600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-booking h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.ticket-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.customer-entry {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+label {
+    min-width: 120px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+input[type="text"], input[type="email"], select {
+    padding: 8px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #8b5e3c;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #8b5e3c;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+button:hover {
+    background-color: #6e472a;
+}
+
+.remove-customer {
+    background-color: #dc3545;
+    color: white;
+    border-radius: 5px;
+}
+
+.remove-customer:hover {
+    background-color: #c82333;
+}
+
+.message {
+    text-align: center;
+    color: green;
+    margin-top: 15px;
+}
+
+input, select, button {
+    font-size: 1em;
+}
+
+.add-customer-button {
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.add-customer-button:hover {
+    background-color: #0056b3;
+}
 

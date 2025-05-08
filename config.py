@@ -5,5 +5,5 @@ class Config:
     MAIL_SERVER = 'smtp.gmail.com'
     MAIL_PORT = 587
     MAIL_USE_TLS = True
-    MAIL_USERNAME = os.getenv('MAIL_USERNAME')  # Use environment variables for security
-    MAIL_PASSWORD = os.getenv('MAIL_PASSWORD')
+    MAIL_USERNAME = os.getenv('MAIL_USERNAME')  # Im using environment variables for security,
+    MAIL_PASSWORD = os.getenv('MAIL_PASSWORD')  # but this also means it only works in my dev environment at the moment.

@@ -6,21 +6,16 @@ canvas {
     box-sizing: border-box;
 }
 
-button {
-    display: block;
-    margin: 10px auto;
-    padding: 10px;
-    background-color: #8b5e3c;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #6e472a;
-}
-
-#score {
+#score, #highScore {
     text-align: center;
     font-size: 1.5em;
+    margin-top: 10px;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+    color: #8b5e3c;
 }
